@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net472</TargetFramework>
+		<LangVersion>latest</LangVersion>
+		<Nullable>disable</Nullable>
+		<AssemblyName>SubnauticaBZRandomizer</AssemblyName>
+		<RootNamespace>SubnauticaBZRandomizer</RootNamespace>
+		<OutputPath>bin\$(Configuration)\</OutputPath>
+		<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+
+		<!-- ✅ AJOUTER LES ATTRIBUTS D'ASSEMBLY ICI -->
+		<AssemblyTitle>Subnautica BZ Archipelago Randomizer</AssemblyTitle>
+		<AssemblyProduct>SubnauticaBZRandomizer</AssemblyProduct>
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<FileVersion>1.0.0.0</FileVersion>
+		<AssemblyCompany>Your Name</AssemblyCompany>
+		<AssemblyConfiguration>Release</AssemblyConfiguration>
+	</PropertyGroup>
+
+	<!-- ✅ INCLURE TOUTES LES DLLs DU DOSSIER lib/ -->
+	<ItemGroup>
+		<Reference Include="lib\*.dll" />
+	</ItemGroup>
+
+	<!-- ✅ INCLURE TOUS LES FICHIERS .cs -->
+	<ItemGroup>
+		<Compile Include="**/*.cs" Exclude="obj/**/*.cs;bin/**/*.cs;Properties/AssemblyInfo.cs" />
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="Archipelago.MultiClient.Net" Version="6.7.1" />
+	</ItemGroup>
+
+</Project>
