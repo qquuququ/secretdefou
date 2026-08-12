@@ -1,0 +1,9 @@
+{
+  "name": "Subnautica: Below Zero",
+  "author": ["knoxdeogen-ship-it"],
+  "base_id": 34000,
+  "compatible_version": "0.6.7",
+  "server_options": {},
+  "item_name_to_id": {},
+  "location_name_to_id": {}
+}
